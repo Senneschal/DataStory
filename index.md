@@ -9,7 +9,7 @@ __Are films getting too simple; full of short sentences and predictable plots, c
 
 These are the questions we want to answer. We have a lot of data: 25GB of film subtitles from the 1900s to 2018, retrieved from the website [OpenSubtitles](https://www.opensubtitles.com/en). With a careful analysis of this data, we can provide answers for the given questions, and many other things. And hopefully we can have some fun along the way.
 
-### 420 No Scopy Head-Shot. thug life.
+### Your Data
 
 Before starting the analysis, it is important to give some main facts about our dataset. If the data is bad - the conclusion will be bad, so we will try to see why our data can lead to a certain bias.
 
