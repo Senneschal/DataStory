@@ -1,0 +1,8 @@
+remote_theme: daviddarnes/alembic
+
+plugins:
+  - jekyll-remote-theme
+
+avatarurl: "/assets/logo.svg"
+name: The Evolution of Language in Films
+description: A Data Story
