@@ -1,13 +1,11 @@
 ---
-feature_text: | 
-    # <span style="color:black;background-color:#eabb53">Improving Quality of Life with Medical Data</span> 
-feature_image: "./assets/film_reel.jpg"
-background-color: #eabb53
+feature_text: |
+    ## <span style="color:black">Globalized Analysis of Medical Data </span> 
+feature_image: "./assets/world.png"
+background-color: #fffffff
 ---
 
-__Are films getting too simple; full of short sentences and predictable plots, catering to an attention-deficit audience? Is it true that contemporary films have a lot more profanity than the old ones? And finally, do people like happy or sad endings?__
-
-These are the questions we want to answer. We have a lot of data: 25GB of film subtitles from the 1900s to 2018, retrieved from the website [OpenSubtitles](https://www.opensubtitles.com/en). With a careful analysis of this data, we can provide answers for the given questions, and many other things. And hopefully we can have some fun along the way.
+__
 
 ### 420 NO SCOPE HEADSHOT THUG LIFE (wie dit leest stinkt)
 
