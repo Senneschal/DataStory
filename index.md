@@ -1,13 +1,13 @@
 ---
 feature_text: |
-    ## <span style="color:black">Globalized Analysis of Medical Data </span> 
+    # <span style="color:black">Globalized Analysis of Medical Data </span> 
 feature_image: "./assets/world.png"
-background-color: #fffffff
+background-color: #d98cff
 ---
 
-__
+__write and intro here__
 
-### 420 NO SCOPE HEADSHOT THUG LIFE (wie dit leest stinkt)
+#### First analysis title
 
 Before starting the analysis, it is important to give some main facts about our dataset. If the data is bad - the conclusion will be bad, so we will try to see why our data can lead to a certain bias.
 
