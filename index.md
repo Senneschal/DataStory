@@ -5,11 +5,19 @@ feature_image: "./assets/world.png"
 background-color: #d98cff
 ---
 
-__write and intro here__
+__This project describes a globalized analysis to medical data in correlations to make other factors. Our goal is to extract usefull information that may be used to draw conclusions on how societies quality of life may be improve, all over the world, in many different countries.__
 
-#### First analysis title
+#### Most common causses of death
 
-Before starting the analysis, it is important to give some main facts about our dataset. If the data is bad - the conclusion will be bad, so we will try to see why our data can lead to a certain bias.
+How can we medical data to help improve society's quality of life?
+There is endless types of medical data out there for different diseases, which data should we use in order to help as many people as possible?
+In other words, which diseases have the most significant negative impact on society's quality of life as of today?
+
+The prevelance of the disease alone is not enough to quantify this, take herpes for example. The herpes simplex virus is one of the most common diseases on earth. It is estimated that well over 50% of the world population is infected with the virus. However, most people are completely unaware that they are and show little to no symptoms. There is no cure and once you are infected, the virus will most likely stay in your body for the rest of your life.
+Conclusion: quality of life is only significantly effected if the disease causes pain or limits the patient ablilities.
+
+The most severe effect of a disease is when it causes death, after all, you can't have any "quality of life" anymore if your life has come to an end.
+Conclusion: If we want to have a big impact on society's quality of life it might be interesting to look at the diseases that cause the most deaths.
 
 ![desc_stat_1](./assets/plot1.png)
 
