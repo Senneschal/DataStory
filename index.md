@@ -15,21 +15,21 @@ Conclusion: If we want to have a big impact on society's quality of life it migh
 ![desc_stat_1](./assets/plot1.png)
 
 
-### The Lowest Common Denominator
+#### The Lowest Common Denominator
 
 
 
 
-### The F-bombs
+#### The F-bombs
 
 
 
-### And They Lived Happily Ever After
+#### And They Lived Happily Ever After
 
 
 
 
-### How to Make a Blockbuster
+#### How to Make a Blockbuster
 
 ---
 
