@@ -2,7 +2,7 @@
 feature_text: |
     # <span style="color:#333333">Globalized Analysis of Medical Data </span> 
 feature_image: "./assets/world.png"
-background-color: #d98cff
+background-color: #333333
 ---
 
 __This project describes the analysis to medical data in combination with data of a variety of possible influencing factors. Our goal is to extract usefull information from this data that could help improve societies quality of life. If we want the impact of our research to have the biggest postive influence possible, it follows naturally that it may be most interesting to look at the medical data from global point of view.__
@@ -63,14 +63,13 @@ Conclusion: If we want to have a big impact on society's quality of life it migh
 ##### How to Make a Blockbuster
 
 ---
-
 __Authors:__ Nathan Sennesael, Ruben Janssens, Aurelien Gabriel Debbas, Joakim Kattelus
 
 The project was a part of the Applied Data Analysis (ADA) course at EPFL. <br>
-Instruction: Robert West
+__Instructor__: Robert West
 
-Special thanks to: <br>
-TA: Tiziano Piccardi<br>
-AE: Yves Rychener<br>
+__Special thanks to:__ <br>
+__TA:__ Tiziano Piccardi<br>
+__AE:__ Yves Rychener<br>
 
-Code used for making this data story is available [on GitHub](https://github.com/Senneschal/Data_Science_Alliance).
+The code and data used in the making of this data story can be found on our [GitHub](https://github.com/Senneschal/Data_Science_Alliance).
