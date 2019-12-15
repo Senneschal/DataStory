@@ -1,6 +1,6 @@
 ---
 feature_text: |
-    # <span style="color:black">Globalized Analysis of Medical Data </span> 
+    # <span style="color:#ea53e2">Globalized Analysis of Medical Data </span> 
 feature_image: "./assets/world.png"
 background-color: #d98cff
 ---
