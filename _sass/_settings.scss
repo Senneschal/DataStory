@@ -1,26 +1,20 @@
 // Background colours
 $backgroundColour: #ffffff;
-$codeBackgroundColour: #fafafa;
-$featureBackgroundColour: #f9fafa;
-$accentColour: #05bf85;
+$codeBackgroundColour: 1337ad;
+$featureBackgroundColour: 1337ad;
+$accentColour: #1337ad;
 
 // Text colours
-$headingColour: #1337ad;
-$bodyColour: #fa407a;
+$headingColour: #333333;
+$bodyColour: #333333;
 $linkColour: #333333;
 $hoverColour: #333333;
-$focusColour: #fa407a;
-$captionColour: #a8adac;
+$focusColour: #333333;
+$captionColour: #333333;
 $white: #ffffff;
 
 // Typography
-$bodytype: (
-  font-family: 'Georgia, serif',
-  regular: 400,
-  bold: 700,
-  italic: italic,
-  cap-height: 0.75
-);
+$bodytype: ( font-family: 'Georgia, serif', regular: 400, bold: 700, italic: italic, cap-height: 0.75 );
 
 $headingtype: (
   font-family: '"Merriweather", serif',
