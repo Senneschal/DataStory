@@ -10,7 +10,9 @@ __This project describes the analysis to medical data in combination with data o
 ##### Measures
 
 Which diseases have the most significant negative impact on society's quality of life? <br> How does differ between countries and over time? <br>
-The most severe effect of a disease is when it causes death, after all, you can't have any "quality of life" anymore if your life has come to an end. <br> 
+The most severe effect of a disease is when it causes death, after all, you can't have any "quality of life" anymore if your life has come to an end. <br>
+
+*You can select your diseases of interest and see how they changed over time in almost any country on earth:*
 
 {% include Amount_of_recorded_deaths.html %}
 
