@@ -12,11 +12,20 @@ __This project describes the analysis to medical data in combination with data o
 Which diseases have the most significant negative impact on society's quality of life? <br> How does differ between countries and over time? <br>
 The most severe effect of a disease is when it causes death, after all, you can't have any "quality of life" anymore if your life has come to an end. <br>
 
-*You can select your diseases of interest and see how they changed over time in almost any country on earth:*
-
 {% include Amount_of_recorded_deaths.html %}
 
 {% include 1.1.1.html %}
+
+We find that cardiovascular disease and cancer are globaly by far the most common causes of death. However, the causes of death strongly vary between different countries. <br>
+Now let's visualize how the mortality of individual diseases compare between countries on a world map.
+
+{% include 1.1.2.html %}
+
+In general we see that cardiovascular is becoming more prevelent in developing countries while its prevelence is decreasing in developed countries. Note that Syria is a clear outlier in the Middle East, this may very well be a result of war.
+
+The Global Burden of Diseases dataset also contains a number of other interesting measures to see the impact of diseases on people's quality of life.
+
+{% include comp_of_measures.html %}
 
 ##### Clustering
 
