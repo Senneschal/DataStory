@@ -21,26 +21,39 @@ So, let's start off by looking at which diseases caused the most deaths worldwid
 
 We find that cardiovascular disease and cancer are globally by far the most common causes of death, followed at a distance by cancers, with all other causes following at more of a distance behind cancer. Those two leading diseases have been steadily rising ever since 1990. Within the other diseases, we see that dementia and diabetes, blood and endocrine diseases have been rising as well, while other diseases like lower respiratory infections have been falling.<br>
 
-However, the most common causes of death, and the way in which they changed, strongly vary between different countries. So, let's now compare the change in number of deaths from different diseases between all countries in the world. Because countries have different populations, we now look at which percentage of all deaths were caused by a specific disease. You can choose the disease yourself using the drop down menu. We then plot the difference between that percentage in 2017 and that in 1990: a positive value means that a disease represented more of the deaths in a country in 2017 than in 1990.
+However, the most common causes of death, and the way in which they changed, strongly vary between different countries. So, let's now compare the change in number of deaths from different diseases between all countries in the world. Because countries have different populations, we now look at which percentage of all deaths were caused by a specific disease. You can choose the disease using the drop down menu. We then plot the difference between that percentage in 2017 and that in 1990: a positive value means that a disease represented more of the deaths in a country in 2017 than in 1990.
 
 {% include 1.1.2.html %}
 
-When looking at cardiovascular disease, we see that it has become increasingly prevelent in developing countries while its prevelence is decreasing in developed countries. Note that Syria is a clear outlier in the Middle East, this may very well be a result of war.
+Let's look at some interesting diseases.
+When looking at **cardiovascular disease**, we see that it has become increasingly important in developing and newly-industrialised countries, especially in the Middle East and Asia, while its importance is decreasing in highly developed countries. Note that Syria and Iraq are a clear outliers in the Middle East, as cardiovascular diseases became less prevalent there.
 
-**ADD MORE ANALYSIS**
+Speaking of Syria and Iraq: they are the two countries that pop up when looking at **deaths due to conflict**.
+
+**Cancers** are on the rise all over the world, interestingly except in the former Soviet states of Russia, Belarus, Ukraine and Kazachstan.
+
+The fall of **Lower respiratory infections**, that we saw in the global view, is mostly concentrated in developing and newly-industrialised states: in Latin America, Africa and Asia.
+
+**Dementia** is becoming more important all ove the world, but less in Sub-Sahara Africa and Central Asia. Japan is clearly the country where dementia is growing the most: that is logical, knowing Japan has the oldest population in the world.
+
+**Diabetes, blood and endocrine disease** are mostly rising in Latin America, North Africa, the Middle East and South Asia.
+
+What is most interesting about these observations, is that we cannot just divide the diseases into "developed world diseases" and "developing world diseases". While the evolutions are often rather coherent within subregions, they are not the same in all of the developed world and all of the developing world.
 
 The Global Burden of Diseases dataset also contains a number of other interesting measures to see the impact of diseases on people's quality of life. Six measures are available: deaths, incidence, prevalence, Years of Life Lost, Years Lived with Disability and Disability-Adjusted Life Years. The following bar chart plots the diseases, sorted according to their value for a specific metric. You can choose the metric in the dropdown menu. After the chart, we explain what the different measures represent to get a more intuitive feeling for them.
 
+Note that the disease categories shown are now different: this is because this data is taken from a different view of the dataset. 
+
 {% include comp_of_measures.html %}
 
-* **Deaths** represent, of course, how many people actually die from these diseases. Since this is the most intuitive measure, let us compare the other measures with this.
-* **YLLs (Years of Life Lost)** represent the years of life lost due to premature mortality. YLLs are the multiplication of
+**Deaths** represent, of course, how many people actually die from these diseases. Since this is the most intuitive measure, let us compare the other measures with this.
+**YLLs (Years of Life Lost)** represent the years of life lost due to premature mortality. YLLs are the multiplication of
 deaths and a standard life expectancy at the age of death. It generates a rather similar ranking to the deaths one. However, this clearly takes into account the age at which the person dies from this diseases: that explains why maternal and neonatal disorders is number three in this ranking, while it is not in the top 5 of deaths, because people die at a much earlier age from these disorders, leading to a higher number of years of life lost.
-* **YLDs (Years Lived with Disability)** are the years lived with any short-term or long-term health loss, weighted for
+**YLDs (Years Lived with Disability)** are the years lived with any short-term or long-term health loss, weighted for
 severity. Its ranking shows mostly diseases from which people don't die (quickly), but which have a high impact on quality of life (disabilities which have a high impact are weighted higher in this measure), such as musculoskeletal disorders (such as paralysis).
-* **DALYs (Disability-Adjusted Life Years)** is defined as the sum of the Years of Life Lost and Years Lived with Disability, leading to the 'number of healthy life years lost'. This can be seen in the ranking: it is a mix of diseases from which many people die, such as cardiovascular diseases and neoplasms (cancers), and diseases which have a long-lasting high impact on life (such as musculoskeletal diseases).
-* **Incidence** is the number of people who contracted a certain disease in 2017. Here we see some diseases, like respiratory infections, skin and subcutaneous diseases and others, which are very common, but are quickly cured: so the people don't die from them and don't have to live with them for long, when comparing to the deaths ranking.
-* **Prevalence** is the number of people who lived with that disease in 2017. This metric can be compared to the Years Lived with Disabilities, since they both emphasise diseases people live with for a long time, but this metric is not weighted by the impact of the disease on the quality of life, so diseases like Sense organ diseases (like hearing or vision impairment), which have a relatively lower impact than musculoskeletal diseases, are ranked higher.
+**DALYs (Disability-Adjusted Life Years)** is defined as the sum of the Years of Life Lost and Years Lived with Disability, leading to the 'number of healthy life years lost'. This can be seen in the ranking: it is a mix of diseases from which many people die, such as cardiovascular diseases and neoplasms (cancers), and diseases which have a long-lasting high impact on life (such as musculoskeletal diseases).
+**Incidence** is the number of people who contracted a certain disease in 2017. Here we see some diseases, like respiratory infections, skin and subcutaneous diseases and others, which are very common, but are quickly cured: so the people don't die from them and don't have to live with them for long, when comparing to the deaths ranking.
+**Prevalence** is the number of people who lived with that disease in 2017. This metric can be compared to the Years Lived with Disabilities, since they both emphasise diseases people live with for a long time, but this metric is not weighted by the impact of the disease on the quality of life, so diseases like Sense organ diseases (like hearing or vision impairment), which have a relatively lower impact than musculoskeletal diseases, are ranked higher.
 
 Let's also look at the correlation between those metrics to see if we can infer more information or confirm the ideas we just formulated.
 
@@ -48,11 +61,11 @@ Let's also look at the correlation between those metrics to see if we can infer 
 <img src="assets/measures_correlations.png" width="550px" >
 </p>
 
-* **Deaths** and **YLLs** are strongly positively correlated. This shows that even though YLLs take into account how old a person is at time of death, this only slightly changes the ranking.
-* **DALYS** are strongly positively correlated with YLLs (and as such also with Deaths), and only weakly positively correlated with YLDs. This means that apparently, the YLLs have a much higher impact on this value than the YLDs.
-* Both **Prevalence** and **YLDs** are negatively correlated with Deaths. This affirms our conclusion from earlier that these measures emphasize diseases from which people don't always die, but just live with for a long time.
-* Similarly, **Incidence** and **YLDs** are negatively correlated: showing that YLDs emphasise diseases that not many people get each year, but with which they do live for a long time.
-* Also **Prevalence** and **Deaths** are negatively correlated, showing that diseases with high prevalence are diseases with which people live for a long time, but which don't always cause death.
+**Deaths** and **YLLs** are strongly positively correlated. This shows that even though YLLs take into account how old a person is at time of death, this only slightly changes the ranking.
+**DALYS** are strongly positively correlated with YLLs (and as such also with Deaths), and only weakly positively correlated with YLDs. This means that apparently, the YLLs have a much higher impact on this value than the YLDs.
+Both **Prevalence** and **YLDs** are negatively correlated with Deaths. This affirms our conclusion from earlier that these measures emphasize diseases from which people don't always die, but just live with for a long time.
+Similarly, **Incidence** and **YLDs** are negatively correlated: showing that YLDs emphasise diseases that not many people get each year, but with which they do live for a long time.
+Also **Prevalence** and **Deaths** are negatively correlated, showing that diseases with high prevalence are diseases with which people live for a long time, but which don't always cause death.
 
 All of these measures clearly have their own merit and provide different insights. However, since we want to explore the impact diseases have on society, the DALYs measure is probably the most interesting. We will primarily use this measure for all future analyses.
 
