@@ -52,7 +52,7 @@ We notice, for example, that the countries of the Middle East and the Golf have 
 
 A deeper analysis of the political and medical model of these countries would be interesting for a deeper analysis of the situation. 
 
-{% oce1.html %}
+{% include oce1.html %}
 
 
 ##### conclusion
