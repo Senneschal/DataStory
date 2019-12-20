@@ -27,24 +27,30 @@ The Global Burden of Diseases dataset also contains a number of other interestin
 
 ##### Clustering
 
-Hello Joakim
+To compare how diseases develop in different countries, we took disease data from The Global Burden of Diseases dataset for each country and disease, and investigated which countries are correlated. This correlation  between two countries describes how these diseases develop in them; if two countries are positively correlated, an increase in the disease in one is generawlly followed by an increase in the other, and if they are negatively correlated, increasing diseases in one country usually means it is decreasing in the other. We then grouped the countries into groups, so that the countries in each groups are correlated with each other. 
+
+The slider beneath the plots determines the "coarseness" of the grouping. It gives the average lack of positive correlation allowed withing groups: a value of 0 means perfect correlation, 1 on average no correlation within group and values greater than one include even negatively correlated countries in the group. 
 
 {% include cluster1.html %}
 
-COMMENT: This plot shows strong difference between the Western and Eastern world, especially in Europe the grouping goes almost by the old iron curtain. This supports the hypothesis that cardiovascular diseases may depend mainly on societal and economic factors.
+This plot shows strong difference between the Western and Eastern world, especially in Europe. The border between groups defintely differentiates between what is commonly known as Western and Eastern Europe. Interestingly, we saw in the previous part that deaths of cardiovascular diseases are decreasing in the developed world and increasing in the developing.
+But looking at correlation of DALYs, much of the developed and developing world is grouped in the same group implying similar development. This implys that while deaths from these diseases are decreasing in developed countries, people still liva with and suffer from them.
+
+In general, the groups do not appear to be confined to geographical groupings. This supports the hypothesis that cardiovascular diseases may depend mainly on societal and economic factors.
 
 {% include cluster2.html %}
 
-COMMENT: For respiraytory and tuberculosis, the correlation appears stronger, as larger groups form at lower grouping tresholds. The grouping also appears less dependant on societal and economic factors than for cardiovascular diseases, and perhaps more dependant on geography. This makes sense, as this is now an infectious disease we are looking at.
+For respiratory and tuberculosis, the correlation appears stronger, as larger groups form at lower grouping tresholds. The grouping also appears less dependant on societal and economic factors than for cardiovascular diseases, and perhaps more dependant on geography. This makes sense, as this is now an infectious disease we are looking at.
 
-An interesting correlation that shows up is the strong correlation between Germany and Argentina. This could just be a coincidence, but there are strong historical ties between the countries and a lot of German expats/people with German roots living in Argentina. https://en.wikipedia.org/wiki/German_Argentine People may transfer the diseases from country to country when visiting relatives. We are also looking at a long term measure such as DALY's. One hypthesis that could be made is that German Argentines with dual citizenship might seek treatment in Germany, a country ranked higher in healthcare comparisons. However, more research on if this kind of phenomenon exists would be needed, as this is pure speculation at this point.
+An interesting correlation that shows up is the strong correlation between Germany and Argentina. This could just be a coincidence, but there are strong historical ties between the countries and a lot of German expats/people with German roots living in Argentina. https://en.wikipedia.org/wiki/German_Argentine People may transfer the diseases from country to country when visiting relatives. We are also looking at a long term measure such as DALY's. One hypohesis that could be made is that German Argentines with dual citizenship might seek treatment in Germany, a country ranked higher in healthcare comparisons. However, more research on if this kind of phenomenon exists would be needed, as this is pure speculation at this point.
 
 {% include cluster3.html %}
 
-For infectious diseases, incidence might be a better measure. Indeed, looking at Incidence as opposecd to DALYs shows some interesting things: the correlations are strong, indicating an infectious disease. At high groupimg,the entire world except for a select few countries are positively correlated, while these countries actually appear negatively correlated to teh bigger group. The interesting observation that can be made is that all these countries in their own separate groups are countries that have been subject to considerable instability, strife and even civil war in the time period lookid at. (Liberia, Chad, Afghanistan...) This might indicate that the disease incidence in conflict prone countries is simialr between these countries and very different and not positively correlated with the rest of the world. In essence, these countries may be "isolated", and not part of the global network of disease transmission. However, due to strife and instability, the medical data from these countries might just be incomolete or faulty.
+For infectious diseases, incidence might be a better measure. Indeed, looking at Incidence as opposecd to DALYs shows some interesting things: the correlations are strong, indicating an infectious disease. At coarse grouping, the entire world except for a select few countries are positively correlated, while these countries actually appear quite negatively correlated to teh bigger group. The interesting observation that can be made is that all these countries in their own separate groups are countries that have been subject to considerable instability, strife and even civil war in the time period lookid at. (Liberia, Chad, Afghanistan...) This might indicate that the disease incidence in conflict prone countries is simialr between these countries and very different and not positively correlated with the rest of the world. In essence, these countries may be "isolated", and not part of the global network of disease transmission. However, due to strife and instability, the medical data from these countries might just be incomplete or faulty.
 
-{% include cluster6.html %}
+###{% include cluster6.html %}
 
+The old adage that correlation does not imply causation is worth noting here. That two countries are correlated only means that the development of the disease in the countries is similar. The reasons for this similarity may be many: direct spread of disease, geographical factors, social, economic factors and more. These reasons and risk factors for disease will be explored in the next sections. 
 
 
 ##### Risk factors
