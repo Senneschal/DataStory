@@ -5,16 +5,23 @@ feature_image: "./assets/world.png"
 background-color: #333333
 ---
 
-__This project describes the analysis to medical data in combination with data of a variety of possible influencing factors. Our goal is to extract usefull information from this data that could help improve societies quality of life. In order to maximize the potential positive influences of the performed research, it follows naturally that it may be most interesting to look at the medical data from a globalized point of view.__
+__All over the world, lots of data is gathered concerning people's health. Can we extract useful information from this data to improve the quality of life of societies? In this project, we specifically want to get to know which diseases have the biggest negative impact on societies' quality of life, and what factors influence this.__
+
+For this analysis, data from the Global Burden of Diseases dataset was used: http://ghdx.healthdata.org/gbd-results-tool.
 
 ##### Measures
 
-Which diseases have the most significant negative impact on society's quality of life? <br> How does differ between countries and how does it change over time? <br>
-The most severe effect of a disease is when it causes death, after all, you can't have any "quality of life" anymore if your life has come to an end. <br>
+Which diseases have the most significant negative impact on society's quality of life? How does this differ between countries and how does it change over time? <br>
+
+To answer this question, we first need to decide how we quantify the impact a disease has on quality of life of a society. The easiest way to look at this, is to look at the number of deaths a disease causes: after all, you can't have any "quality of life" anymore if your life has come to an end. <br>
+
+So, let's start off by looking at which diseases caused the most deaths worldwide, in every year since 1990.
 
 {% include Amount_of_recorded_deaths.html %}
 
-We find that cardiovascular disease and cancer are globaly by far the most common causes of death, however, the causes of death strongly vary between different countries. <br>
+We find that cardiovascular disease and cancer are globally by far the most common causes of death, followed at a distance by cancers, with all other causes following at more of a distance behind cancer. <br>
+
+However, the causes of death strongly vary between different countries. <br>
 The following map visualizes the mortality of different diseases for each country. The disease can conviently be chosen by using the drop down menu.
 
 {% include 1.1.2.html %}
@@ -50,10 +57,36 @@ For infectious diseases, Incidence might be a better measure. Indeed, looking at
 
 Note that, the old adage "correlation does not imply causation" is very much applicable to these findings. That two countries are correlated only means that the development of the disease in the countries is similar. The reasons for this similarity may be many: direct spread of disease, geographical factors, social, economic factors and more. These reasons and risk factors for disease will be explored in the next sections. 
 
+##### Economical and political factors
+
+We saw in the first section that some causes of death were more significant than others. 
+If we add the life expectancy and the GDP per capita, we notice that the suggestions we made previously are realistic. <br>
+Indeed, we notice that cardiovascular diseases and apply precipitously to the most developed countries and to the richest countries while other causes of death apply more to the least developed countries. <br>
+Cardiovascular diseases, Musculoskeletal disorders and Neoplasms are considered as diseases of more developed countries but  Maternal and neonatal disorders and Respiratory infections and tuberculosis are diseases that are more prevalent in less developed countries. <br> 
+
+The following graphs show these measures and the evolution of the countries over the years. <br>
+We have also expressed the economic situation of the country by its GDP per capita, which is represented by the size of the spheres. Furthermore, the the region and geographical sub-region of the specific country is represented by the colour.
+
+{% include eco1.html %}
+
+{% include eco2.html %}
+
+{% include eco3.html %}
+
+{% include eco4.html %} 
+
+{% include eco5.html %}
+
+Also note that nuances exist for certain geographical areas 
+
+Notice, for example, that the countries of the Middle East and the Golf have the economic characteristics of the more developed countries but that they share the medical characteristics of the less developed countries. 
+
+A deeper analysis of the political and medical model of these countries would be interesting for a deeper analysis of the situation. 
+
 
 ##### Risk factors
 
-To better understand the risks factors for worlds most deadliest disease, cardiovascular diseases, we analyse a dataset from [Kaggle](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset) . This dataset containes data for 70,000 patients each described by 11 features: <br> age, gender, height, weight, ap_hi (systolic blood pressure), ap_lo (diastolic blood pressure), cholesterol, gluc (glucose), smoke (binary), alco (binary acohol use), active (binary exercise). 
+To better understand the risks factors for the worlds most deadliest disease, cardiovascular diseases, we analyse a dataset from [Kaggle](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset) . This dataset containes data for 70,000 patients each described by 11 features: <br> age, gender, height, weight, ap_hi (systolic blood pressure), ap_lo (diastolic blood pressure), cholesterol, gluc (glucose), smoke (binary), alco (binary acohol use), active (binary exercise). 
 
 <p align="center">
 <img src="assets/correlation.png" width="550px" >
@@ -83,32 +116,7 @@ So in order to minimize our risk of cardiovascular disease we should try to keep
 This can both be done be following a healthy diet and working out (burning fat).
 
 
-##### Economical and political factors
 
-
-We saw in the previous section that some causes of death were more significant than others. 
-If we add the life expectancy and the GDP per capita, we notice that the suggestions we made previously are realistic. <br>
-Indeed, we notice that cardiovascular diseases and apply precipitously to the most developed countries and to the richest countries while other causes of death apply more to the least developed countries. <br>
-Cardiovascular diseases, Musculoskeletal disorders and Neoplasms are considered as diseases of more developed countries but  Maternal and neonatal disorders and Respiratory infections and tuberculosis are diseases that are more prevalent in less developed countries. <br> 
-
-The following graphs show these measures and the evolution of the countries over the years. <br>
-We have also expressed the economic situation of the country by its GDP per capita, which is represented by the size of the spheres. Furthermore, the the region and geographical sub-region of the specific country is represented by the colour.
-
-{% include eco1.html %}
-
-{% include eco2.html %}
-
-{% include eco3.html %}
-
-{% include eco4.html %} 
-
-{% include eco5.html %}
-
-Also note that nuances exist for certain geographical areas 
-
-Notice, for example, that the countries of the Middle East and the Golf have the economic characteristics of the more developed countries but that they share the medical characteristics of the less developed countries. 
-
-A deeper analysis of the political and medical model of these countries would be interesting for a deeper analysis of the situation. 
 
 
 ##### conclusion
