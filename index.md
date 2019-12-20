@@ -29,6 +29,20 @@ The Global Burden of Diseases dataset also contains a number of other interestin
 
 ##### Clustering
 
+{% include cluster1.html %}
+
+{% include cluster2.html %}
+
+{% include cluster3.html %}
+
+{% include cluster4.html %}
+
+{% include cluster5.html %}
+
+{% include cluster6.html %}
+
+
+
 ##### Risk factors
 
 ##### Economical and political factors
