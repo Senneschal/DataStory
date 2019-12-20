@@ -9,17 +9,17 @@ __This project describes the analysis to medical data in combination with data o
 
 ##### Measures
 
-Which diseases have the most significant negative impact on society's quality of life? <br> How does differ between countries and over time? <br>
+Which diseases have the most significant negative impact on society's quality of life? <br> How does differ between countries and how does it change over time? <br>
 The most severe effect of a disease is when it causes death, after all, you can't have any "quality of life" anymore if your life has come to an end. <br>
 
 {% include Amount_of_recorded_deaths.html %}
 
-We find that cardiovascular disease and cancer are globaly by far the most common causes of death, thus are these two disease will be in our main interest. However, the causes of death strongly vary between different countries. <br>
-Now let's visualize how the mortality of individual diseases compare between countries on a world map.
+We find that cardiovascular disease and cancer are globaly by far the most common causes of death, however, the causes of death strongly vary between different countries. <br>
+The following map visualizes the mortality of different diseases for each country. The disease can conviently be chosen by using the drop down menu.
 
 {% include 1.1.2.html %}
 
-For cardiovascular disease, in general, we see that it is becoming more prevelent in developing countries while its prevelence is decreasing in developed countries. Note that Syria is a clear outlier in the Middle East, this may very well be a result of war.
+When looking at cardiovascular disease, we see that it has become increasingly prevelent in developing countries while its prevelence is decreasing in developed countries. Note that Syria is a clear outlier in the Middle East, this may very well be a result of war.
 
 The Global Burden of Diseases dataset also contains a number of other interesting measures to see the impact of diseases on people's quality of life.
 
@@ -27,9 +27,9 @@ The Global Burden of Diseases dataset also contains a number of other interestin
 
 ##### Clustering
 
-To compare how diseases develop in different countries, we took disease data from The Global Burden of Diseases dataset for each country and disease, and investigated which countries are correlated. This correlation  between two countries describes how these diseases develop in them; if two countries are positively correlated, an increase in the disease in one is generally followed by an increase in the other, and if they are negatively correlated, increasing diseases in one country usually means it is decreasing in the other. We then grouped the countries into groups, so that the countries in each groups are correlated with each other. 
+To compare how diseases develop in different countries, we took disease data from The Global Burden of Diseases dataset for each country and disease, and investigated which countries are correlated. There is several ways in which a disease can be strongly correlated between countries. Neighbouring countries may be strongly correlated because the disease could spread accross the borders. But also countries that are far apart from each other could be highly correlated as a result of frequent air travel between them. Another way distant countries could strongly correlated is because of past colonization, which may cause the populations to have similar genetics that makes them vulnerable to a specific disease, etc. We then grouped the countries for specific diseases such that in each groups are correlated with each other above a certain threshold value. 
 
-The slider beneath the plots determines the "coarseness" of the grouping. It gives the average lack of positive correlation allowed within groups: a value of 0 means perfect correlation, 1 on average no correlation within group and values greater than one include even negatively correlated countries in the group. 
+The slider beneath the plots determines the "coarseness" of the grouping. It gives the average lack of positive correlation allowed within groups: a value of 0 means perfect correlation, 1 on average no correlation within group and values greater than one include even negatively correlated countries in the group. Thus if the slider is all the way to the right, almost every country is concidered to be in the same group while if the slides is moves all the way to the left, almost every country is concidered to be its own group.
 
 {% include cluster1.html %}
 
