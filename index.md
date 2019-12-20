@@ -43,10 +43,6 @@ An interesting correlation that shows up is the strong correlation between Germa
 
 For infectious diseases, incidence might be a better measure. Indeed, looking at Incidence as opposecd to DALYs shows some interesting things: the correlations are strong, indicating an infectious disease. At high groupimg,the entire world except for a select few countries are positively correlated, while these countries actually appear negatively correlated to teh bigger group. The interesting observation that can be made is that all these countries in their own separate groups are countries that have been subject to considerable instability, strife and even civil war in the time period lookid at. (Liberia, Chad, Afghanistan...) This might indicate that the disease incidence in conflict prone countries is simialr between these countries and very different and not positively correlated with the rest of the world. In essence, these countries may be "isolated", and not part of the global network of disease transmission. However, due to strife and instability, the medical data from these countries might just be incomolete or faulty.
 
-{% include cluster4.html %}
-
-{% include cluster5.html %}
-
 {% include cluster6.html %}
 
 
