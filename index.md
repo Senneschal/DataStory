@@ -53,10 +53,9 @@ For infectious diseases, incidence might be a better measure. Indeed, looking at
 
 To better understand the risks factors for worlds most deadliest disease, cardiovascular diseases, we analyse this dataset: https://www.kaggle.com/sulianova/cardiovascular-disease-dataset. This dataset containes data for 70,000 patients each described by 11 features: age, gender, height, weight, ap_hi (systolic blood pressure), ap_lo (diastolic blood pressure), cholesterol, gluc (glucose), smoke (binary value describing if patient smokes), alco (binary value that describes if patient smokes), active (binary value that describes if patient regularly exercises). 
 
-![Screenshot](assets/correlation.png)
-
-
-
+<p align="center">
+<img src="assets/correlation.png" width="100px" >
+</p>
 
 
 ##### Economical and political factors
