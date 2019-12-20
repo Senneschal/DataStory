@@ -98,18 +98,7 @@ A randomized decision tree algorithm was applied to quantify to quantify the imp
 
 {% include CV.html %}
 
-We conclude that ageing is the largest contributing risk factor when it comes to cardiovascular diseases. This nicely agrees with finding in scientific literature which show that elastin proteins in the 
-
-<ul>
-  {% for member in site.data.members %}
-    <li>
-      <a href="#" class="show-message">
-        {{ member.name }}, click me to see something
-      </a>
-      <div class="modal hide"> My favorite music is {{ member.music}}</div>
-    </li>
-  {% endfor %}
-</ul>
+We conclude that ageing is the largest contributing risk factor when it comes to cardiovascular diseases. This nicely agrees with finding in scientific literature which show that elastin proteins in the arteries degrade over time which the body cannot repair. Thus there is a direct relation between the passing of time (ageing) and cariovascular disease.
 
 High blood pressure is a result of other factors: ageing (arterial stiffening), cholesterol levels, salt/fluid intake, ...
 So in order to minimize our risk of cardiovascular disease we should try to keep our BMI and cholesterol levels as low as possible.
