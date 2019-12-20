@@ -14,8 +14,6 @@ The most severe effect of a disease is when it causes death, after all, you can'
 
 {% include Amount_of_recorded_deaths.html %}
 
-{% include 1.1.1.html %}
-
 We find that cardiovascular disease and cancer are globaly by far the most common causes of death, thus are these two disease will be in our main interest. However, the causes of death strongly vary between different countries. <br>
 Now let's visualize how the mortality of individual diseases compare between countries on a world map.
 
