@@ -21,7 +21,7 @@ Now let's visualize how the mortality of individual diseases compare between cou
 
 {% include 1.1.2.html %}
 
-In general we see that cardiovascular is becoming more prevelent in developing countries while its prevelence is decreasing in developed countries. Note that Syria is a clear outlier in the Middle East, this may very well be a result of war.
+For cardiovascular disease, in general, we see that it is becoming more prevelent in developing countries while its prevelence is decreasing in developed countries. Note that Syria is a clear outlier in the Middle East, this may very well be a result of war.
 
 The Global Burden of Diseases dataset also contains a number of other interesting measures to see the impact of diseases on people's quality of life.
 
