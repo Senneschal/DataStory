@@ -15,6 +15,8 @@ For this analysis, data from the Global Burden of Diseases [dataset](http://ghdx
 
 To answer this question, we first need to decide how we quantify the impact a disease has on quality of life of a society. The easiest way to look at this, is to look at the number of deaths a disease causes: after all, you can't have any "quality of life" anymore if your life has come to an end. <br>
 
+###### Deaths
+
 So, let's start off by looking at which diseases caused the most deaths worldwide, in every year since 1990.
 
 {% include Amount_of_recorded_deaths.html %}
@@ -39,6 +41,8 @@ The fall of **Lower respiratory infections**, that we saw in the global view, is
 **Diabetes, blood and endocrine disease** are mostly rising in Latin America, North Africa, the Middle East and South Asia.
 
 What is most interesting about these observations, is that we cannot just divide the diseases into "developed world diseases" and "developing world diseases". While the evolutions are often rather coherent within subregions, they are not the same in all of the developed world and all of the developing world.
+
+###### Other measures
 
 The Global Burden of Diseases dataset also contains a number of other interesting measures to see the impact of diseases on people's quality of life. Six measures are available: deaths, incidence, prevalence, Years of Life Lost, Years Lived with Disability and Disability-Adjusted Life Years. The following bar chart plots the diseases, sorted according to their value for a specific metric. You can choose the metric in the dropdown menu. After the chart, we explain what the different measures represent to get a more intuitive feeling for them.
 
