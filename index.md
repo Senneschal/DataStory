@@ -86,23 +86,22 @@ A deeper analysis of the political and medical model of these countries would be
 
 ##### Risk factors
 
-To better understand the risks factors for the worlds most deadliest disease, cardiovascular diseases, we analyse a dataset from [Kaggle](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset) . This dataset containes data for ***70,000*** patients each described by ***11*** features: <br> age, gender, height, weight, ap_hi (systolic blood pressure), ap_lo (diastolic blood pressure), cholesterol, gluc (glucose), smoke (binary), alco (binary acohol use), active (binary exercise). 
+To better understand the risks factors for the worlds most deadliest disease, cardiovascular diseases, we analyse a dataset from [Kaggle](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset) . This dataset containes data for ***70,000*** patients each described by ***11*** features: <br> age, gender, height, weight, ap_hi (systolic blood pressure), ap_lo (diastolic blood pressure), cholesterol, gluc (glucose), smoke (binary), alco (binary acohol use), active (binary exercise). Also an additional feature was added, the pulse pressure, which is the difference of the systollic and diastollic pressure.
 
 <p align="center">
 <img src="assets/correlation.png" width="550px" >
 </p>
 
-The dataset was first extensively cleaned as it contained many unrealistic values. Next some of the features were editted, height and weighted were merged into a new feature "BMI" which may be more interesting when describing cardiovascular disease as it is stronger related to diet or other health issues like diabetes.
+From the correlation matrix we conclude that blood pressure, age, weight and cholesterol show the highest correlations to cardiovascular disease. height and weighted were merged into a new feature "BMI" which may be more interesting when describing cardiovascular disease as it is stronger related to diet or other health issues such as diabetes.
 
-A randomized decision tree algorithm was applied to quantify to quantify the importance of the features and thus giving us a better view of which are the biggest risk factors for cardiovascular disease.
+Correlations don't always give a good view on which features are truly most important. A randomized decision tree algorithm was applied to better quantify the importance of the features and thus giving us a better view of which are the biggest risk factors for cardiovascular disease.
 
 {% include CV.html %}
 
-We conclude that ageing is the largest contributing risk factor when it comes to cardiovascular diseases. This nicely agrees with finding in scientific literature which show that elastin proteins in the arteries degrade over time which the body cannot repair. Thus there is a direct relation between the passing of time (ageing) and cariovascular disease.
-
-High blood pressure is a result of other factors: ageing (arterial stiffening), cholesterol levels, salt/fluid intake, ...
+We conclude that ageing is the largest contributing risk factor when it comes to cardiovascular diseases. This nicely agrees with finding in scientific literature which show that elastin proteins in the arteries degrade over time which the body cannot repair. Thus there is a direct relation between the passing of time (ageing) and cariovascular disease. This is not something that can easily be controlled or fixed, so if we want to minimize our risk of cardiovascular disease we have to concider the other features. <br>
+High blood pressure is caused of other factors: ageing (arterial stiffening), cholesterol levels, salt/fluid intake, ...
 So in order to minimize our risk of cardiovascular disease we should try to keep our BMI and cholesterol levels as low as possible.
-This can both be done be following a healthy diet and working out (burning fat).
+This can both be done be following a healthy diet and exercising regularly (burning fat).
 
 
 
