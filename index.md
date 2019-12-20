@@ -52,8 +52,26 @@ We notice, for example, that the countries of the Middle East and the Golf have 
 
 A deeper analysis of the political and medical model of these countries would be interesting for a deeper analysis of the situation. 
 
+The graph below shows us the prevalence of maternal and neonatal disorders in respect to life expectancy. 
+We have also expressed the economic situation of the country by its GDP per capita, which is represented by the size of the spheres. Furthermore, the the region and geographical sub-region of the specific country is represented by the colour.
+
 {% include eco1.html %}
 
+The graph below shows us the prevalence of maternal and neonatal disorders in respect to life expectancy. 
+
+{% include eco2.html %}
+
+The graph below shows us the prevalence of maternal and neonatal disorders in respect to life expectancy. 
+
+{% include eco3.html %}
+
+The graph below shows us the prevalence of maternal and neonatal disorders in respect to life expectancy. 
+
+{% include eco4.html %}
+
+The graph below shows us the prevalence of maternal and neonatal disorders in respect to life expectancy. 
+
+{% include eco5.html %}
 
 ##### conclusion
 
