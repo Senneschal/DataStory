@@ -29,6 +29,8 @@ The Global Burden of Diseases dataset also contains a number of other interestin
 
 ##### Clustering
 
+Hello
+
 {% include cluster1.html %}
 
 COMMENT: This plot shows strong difference between the Western and Eastern world, especially in Europe the grouping goes almost by the old iron curtain. This supports the hypothesis that cardiovascular diseases may depend mainly on societal and economic factors.
