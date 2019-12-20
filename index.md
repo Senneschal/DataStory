@@ -11,7 +11,7 @@ For this analysis, data from the Global Burden of Diseases [dataset](http://ghdx
 
 ##### Impact of diseases
 
-*Which diseases have the most significant negative impact on society's quality of life? How does this differ between countries and how does it change over time?* <br>
+*Which diseases have the most significant negative impact on society's quality of life? <br> How does this differ between countries and how does it change over time?* <br>
 
 To answer this question, we first need to decide how we quantify the impact a disease has on quality of life of a society. The easiest way to look at this, is to look at the number of deaths a disease causes: after all, you can't have any "quality of life" anymore if your life has come to an end. <br>
 
