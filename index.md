@@ -169,7 +169,7 @@ A general conclusion regarding this project would be that there is truely a weal
 ---
 __Authors:__ Nathan Sennesael, Ruben Janssens, Aurelien Gabriel Debbas, Joakim Kattelus
 
-The project was a part of the Applied Data Analysis (ADA) course at EPFL. <br>
+This project was a part of the Applied Data Analysis (ADA) course at EPFL. <br>
 __Instructor__: Robert West
 
 __Special thanks to:__ <br>
