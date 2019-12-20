@@ -7,7 +7,7 @@ background-color: #333333
 
 __All over the world, lots of data is gathered concerning people's health. Can we extract useful information from this data to improve the quality of life of societies? In this project, we specifically want to get to know which diseases have the biggest negative impact on societies' quality of life, and what factors influence this.__
 
-For this analysis, data from the Global Burden of Diseases dataset was used: http://ghdx.healthdata.org/gbd-results-tool.
+For this analysis, data from the Global Burden of Diseases [dataset](http://ghdx.healthdata.org/gbd-results-tool) was used.
 
 ##### Measures
 
@@ -49,7 +49,7 @@ In general, the groups do not appear to be confined to geographical groupings. T
 
 For respiratory and tuberculosis, the correlation appears stronger, as larger groups form at lower grouping tresholds. The grouping also appears more dependent on geography as neighbouring countries quickly form groups, which strongly differs from the societal and economic factors that showed to govern cardiovascular disease. This makes sense, as this is now an infectious disease we are looking at, which can truly spread accros countries.
 
-An interesting correlation that shows up is the strong correlation between Germany and Argentina. This could just be a coincidence, but there are strong historical ties between the countries and a lot of German expats/people with German roots living in Argentina. https://en.wikipedia.org/wiki/German_Argentine People may transfer the diseases from country to country when visiting relatives. We are also looking at a long term measure such as DALY's. One hypohesis that could be made is that German Argentines with dual citizenship might seek treatment in Germany, a country ranked higher in healthcare comparisons. However, more research would be needed to comfirm these speculations.
+An interesting correlation that shows up is the strong correlation between Germany and Argentina. This could just be a coincidence, but there are strong historical ties between the countries and a lot of German expats/people with German roots living in Argentina ([learn more](https://en.wikipedia.org/wiki/German_Argentine)). People may transfer the diseases from country to country when visiting relatives. We are also looking at a long term measure such as DALY's. One hypohesis that could be made is that German Argentines with dual citizenship might seek treatment in Germany, a country ranked higher in healthcare comparisons. However, more research would be needed to comfirm these speculations.
 
 {% include cluster3.html %}
 
