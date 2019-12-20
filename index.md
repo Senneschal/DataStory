@@ -55,11 +55,28 @@ To better understand the risks factors for worlds most deadliest disease, cardio
 <img src="assets/correlation.png" width="600px" >
 </p>
 
-The dataset was first extensively cleaned as it contained many unrealistic values. Next some of the features were editted, height and weighted were merged into a new feature "BMI" which may be more interesting when describing cardiovascular disease as it is stronger related to diet or other health issues.
+The dataset was first extensively cleaned as it contained many unrealistic values. Next some of the features were editted, height and weighted were merged into a new feature "BMI" which may be more interesting when describing cardiovascular disease as it is stronger related to diet or other health issues like diabetes.
 
 A randomized decision tree algorithm was applied to quantify to quantify the importance of the features and thus giving us a better view of which are the biggest risk factors for cardiovascular disease.
 
 {% include CV.html %}
+
+We conclude that ageing is the largest contributing risk factor when it comes to cardiovascular diseases. This nicely agrees with finding in scientific literature which show that elastin proteins in the 
+
+<ul>
+  {% for member in site.data.members %}
+    <li>
+      <a href="#" class="show-message">
+        {{ member.name }}, click me to see something
+      </a>
+      <div class="modal hide"> My favorite music is {{ member.music}}</div>
+    </li>
+  {% endfor %}
+</ul>
+
+High blood pressure is a result of other factors: ageing (arterial stiffening), cholesterol levels, salt/fluid intake, ...
+So in order to minimize our risk of cardiovascular disease we should try to keep our BMI and cholesterol levels as low as possible.
+This can both be done be following a healthy diet and working out (burning fat).
 
 
 ##### Economical and political factors
