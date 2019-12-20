@@ -67,7 +67,7 @@ severity. Its ranking shows mostly diseases from which people don't die (quickly
 Let's also look at the correlation between those metrics to see if we can infer more information or confirm the ideas we just formulated.
 
 <p align="center">
-<img src="assets/measures_correlations.png" width="550px" >
+<img src="assets/measures_correlations.png" width="600px" >
 </p>
 
 **Deaths** and **YLLs** are strongly positively correlated. This shows that even though YLLs take into account how old a person is at time of death, this only slightly changes the ranking.
