@@ -35,8 +35,27 @@ The Global Burden of Diseases dataset also contains a number of other interestin
 
 ##### Economical and political factors
 
-##### conclusion
 
+We saw in the previous section that some causes of death were more significant than others. 
+If we add the life expectancy and the GDP per capita, we notice that the suggestions we made previously are realistic. 
+
+Indeed, we notice that cardiovascular diseases and apply precipitously to the most developed countries and to the richest countries while other causes of death apply more to the least developed countries. 
+
+Cardiovascular diseases, Musculoskeletal disorders and Neoplasms are considered as diseases of more developed countries but  Maternal and neonatal disorders and Respiratory infections and tuberculosis are diseases that are more prevalent in less developed countries. 
+
+The following graphs show these measures and the evolution of the countries over the years. 
+
+
+We also note that nuances exist for certain geographical areas 
+
+We notice, for example, that the countries of the Middle East and the Golf have the economic characteristics of the more developed countries but that they share the medical characteristics of the less developed countries. 
+
+A deeper analysis of the political and medical model of these countries would be interesting for a deeper analysis of the situation. 
+
+{% oce1.html %}
+
+
+##### conclusion
 
 
 
