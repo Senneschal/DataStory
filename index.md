@@ -51,12 +51,17 @@ Note that the disease categories shown are now different: this is because this d
 {% include comp_of_measures.html %}
 
 **Deaths** represent, of course, how many people actually die from these diseases. Since this is the most intuitive measure, let us compare the other measures with this.
+
 **YLLs (Years of Life Lost)** represent the years of life lost due to premature mortality. YLLs are the multiplication of
 deaths and a standard life expectancy at the age of death. It generates a rather similar ranking to the deaths one. However, this clearly takes into account the age at which the person dies from this diseases: that explains why maternal and neonatal disorders is number three in this ranking, while it is not in the top 5 of deaths, because people die at a much earlier age from these disorders, leading to a higher number of years of life lost.
+
 **YLDs (Years Lived with Disability)** are the years lived with any short-term or long-term health loss, weighted for
 severity. Its ranking shows mostly diseases from which people don't die (quickly), but which have a high impact on quality of life (disabilities which have a high impact are weighted higher in this measure), such as musculoskeletal disorders (such as paralysis).
+
 **DALYs (Disability-Adjusted Life Years)** is defined as the sum of the Years of Life Lost and Years Lived with Disability, leading to the 'number of healthy life years lost'. This can be seen in the ranking: it is a mix of diseases from which many people die, such as cardiovascular diseases and neoplasms (cancers), and diseases which have a long-lasting high impact on life (such as musculoskeletal diseases).
+
 **Incidence** is the number of people who contracted a certain disease in 2017. Here we see some diseases, like respiratory infections, skin and subcutaneous diseases and others, which are very common, but are quickly cured: so the people don't die from them and don't have to live with them for long, when comparing to the deaths ranking.
+
 **Prevalence** is the number of people who lived with that disease in 2017. This metric can be compared to the Years Lived with Disabilities, since they both emphasise diseases people live with for a long time, but this metric is not weighted by the impact of the disease on the quality of life, so diseases like Sense organ diseases (like hearing or vision impairment), which have a relatively lower impact than musculoskeletal diseases, are ranked higher.
 
 Let's also look at the correlation between those metrics to see if we can infer more information or confirm the ideas we just formulated.
@@ -66,9 +71,13 @@ Let's also look at the correlation between those metrics to see if we can infer 
 </p>
 
 **Deaths** and **YLLs** are strongly positively correlated. This shows that even though YLLs take into account how old a person is at time of death, this only slightly changes the ranking.
+
 **DALYS** are strongly positively correlated with YLLs (and as such also with Deaths), and only weakly positively correlated with YLDs. This means that apparently, the YLLs have a much higher impact on this value than the YLDs.
+
 Both **Prevalence** and **YLDs** are negatively correlated with Deaths. This affirms our conclusion from earlier that these measures emphasize diseases from which people don't always die, but just live with for a long time.
+
 Similarly, **Incidence** and **YLDs** are negatively correlated: showing that YLDs emphasise diseases that not many people get each year, but with which they do live for a long time.
+
 Also **Prevalence** and **Deaths** are negatively correlated, showing that diseases with high prevalence are diseases with which people live for a long time, but which don't always cause death.
 
 All of these measures clearly have their own merit and provide different insights. However, since we want to explore the impact diseases have on society, the DALYs measure is probably the most interesting. We will primarily use this measure for all future analyses.
@@ -108,10 +117,10 @@ Note that, the old adage "correlation does not imply causation" is very much app
 
 ##### Economical and political factors
 
-We saw in the first section that some causes of death were more significant than others. 
-If we add the life expectancy and the GDP per capita, we notice that the suggestions we made previously are realistic. <br>
-Indeed, we notice that cardiovascular diseases and apply precipitously to the most developed countries and to the richest countries while other causes of death apply more to the least developed countries. <br>
-Cardiovascular diseases, Musculoskeletal disorders and Neoplasms are considered as diseases of more developed countries but  Maternal and neonatal disorders and Respiratory infections and tuberculosis are diseases that are more prevalent in less developed countries. <br> 
+We saw in the first section that some causes of death were more significant than others. We also said that of those more important diseases, cardiovascular diseases and neoplasms are considered as diseases of more developed countries but maternal and neonatal disorders and respiratory infections and tuberculosis are diseases that are more prevalent in less developed countries. <br> 
+
+If we look at the life expectancy and the GDP per capita and their relationship with the DALYs lost for these diseases in different countries, we notice that the suggestions we made previously are realistic. <br>
+Indeed, we notice that cardiovascular diseases apply precipitously to the most developed countries and to the richest countries while other causes of death apply more to the least developed countries. <br>
 
 The following graphs show these measures and the evolution of the countries over the years. <br>
 We have also expressed the economic situation of the country by its GDP per capita, which is represented by the size of the spheres. Furthermore, the the region and geographical sub-region of the specific country is represented by the colour.
@@ -126,12 +135,11 @@ We have also expressed the economic situation of the country by its GDP per capi
 
 {% include eco5.html %}
 
-Also note that nuances exist for certain geographical areas 
+Also note that nuances exist for certain geographical areas.
 
-Notice, for example, that the countries of the Middle East and the Golf have the economic characteristics of the more developed countries but that they share the medical characteristics of the less developed countries. 
+Notice, for example, that the countries of the Middle East and the Gulf have the economic characteristics of the more developed countries but that they share the medical characteristics of the less developed countries. 
 
 A deeper analysis of the political and medical model of these countries would be interesting for a deeper analysis of the situation. 
-
 
 ##### Risk factors
 
