@@ -29,7 +29,7 @@ The Global Burden of Diseases dataset also contains a number of other interestin
 
 ##### Clustering
 
-Hello
+Hello Joakim
 
 {% include cluster1.html %}
 
@@ -50,6 +50,13 @@ For infectious diseases, incidence might be a better measure. Indeed, looking at
 
 
 ##### Risk factors
+
+To better understand the risks factors for worlds most deadliest disease, cardiovascular diseases, we analyse this dataset: https://www.kaggle.com/sulianova/cardiovascular-disease-dataset. This dataset containes data for 70,000 patients each described by 11 features: age, gender, height, weight, ap_hi (systolic blood pressure), ap_lo (diastolic blood pressure), cholesterol, gluc (glucose), smoke (binary value describing if patient smokes), alco (binary value that describes if patient smokes), active (binary value that describes if patient regularly exercises). 
+
+<p align="center">
+<img src="assets/correlation.png" width="500px" >
+</p>
+
 
 ##### Economical and political factors
 
@@ -72,9 +79,9 @@ We have also expressed the economic situation of the country by its GDP per capi
 
 {% include eco5.html %}
 
-We also note that nuances exist for certain geographical areas 
+Also note that nuances exist for certain geographical areas 
 
-We notice, for example, that the countries of the Middle East and the Golf have the economic characteristics of the more developed countries but that they share the medical characteristics of the less developed countries. 
+Notice, for example, that the countries of the Middle East and the Golf have the economic characteristics of the more developed countries but that they share the medical characteristics of the less developed countries. 
 
 A deeper analysis of the political and medical model of these countries would be interesting for a deeper analysis of the situation. 
 
