@@ -34,11 +34,29 @@ The Global Burden of Diseases dataset also contains a number of other interestin
 {% include comp_of_measures.html %}
 
 * **Deaths** represent, of course, how many people actually die from these diseases. Since this is the most intuitive measure, let us compare the other measures with this.
-* **YLLs (Years of Life Lost)** generates a rather similar ranking to the deaths one. However, this takes into account the age at which the person dies from this diseases: that explains why maternal and neonatal disorders is number three in this ranking, while it is not in the top 5 of deaths, because people die at a much earlier age from these disorders, leading to a higher number of years of life lost.
-* **YLDs (Years Lived with Disability)** shows mostly diseases from which people don't (quickly) die, but which have a high impact on quality of life (disabilities which have a high impact are weighted higher in this measure), such as musculoskeletal disorders (such as paralysis).
+* **YLLs (Years of Life Lost)** represent the years of life lost due to premature mortality. YLLs are the multiplication of
+deaths and a standard life expectancy at the age of death. It generates a rather similar ranking to the deaths one. However, this clearly takes into account the age at which the person dies from this diseases: that explains why maternal and neonatal disorders is number three in this ranking, while it is not in the top 5 of deaths, because people die at a much earlier age from these disorders, leading to a higher number of years of life lost.
+* **YLDs (Years Lived with Disability)** are the years lived with any short-term or long-term health loss, weighted for
+severity. Its ranking shows mostly diseases from which people don't die (quickly), but which have a high impact on quality of life (disabilities which have a high impact are weighted higher in this measure), such as musculoskeletal disorders (such as paralysis).
 * **DALYs (Disability-Adjusted Life Years)** is defined as the sum of the Years of Life Lost and Years Lived with Disability, leading to the 'number of healthy life years lost'. This can be seen in the ranking: it is a mix of diseases from which many people die, such as cardiovascular diseases and neoplasms (cancers), and diseases which have a long-lasting high impact on life (such as musculoskeletal diseases).
 * **Incidence** is the number of people who contracted a certain disease in 2017. Here we see some diseases, like respiratory infections, skin and subcutaneous diseases and others, which are very common, but are quickly cured: so the people don't die from them and don't have to live with them for long, when comparing to the deaths ranking.
 * **Prevalence** is the number of people who lived with that disease in 2017. This metric can be compared to the Years Lived with Disabilities, since they both emphasise diseases people live with for a long time, but this metric is not weighted by the impact of the disease on the quality of life, so diseases like Sense organ diseases (like hearing or vision impairment), which have a relatively lower impact than musculoskeletal diseases, are ranked higher.
+
+Let's also look at the correlation between those metrics to see if we can infer more information or confirm the ideas we just formulated.
+
+<p align="center">
+<img src="assets/measures_correlations.png" width="550px" >
+</p>
+
+* **Deaths** and **YLLs** are strongly positively correlated. This shows that even though YLLs take into account how old a person is at time of death, this only slightly changes the ranking.
+* **DALYS** are strongly positively correlated with YLLs (and as such also with Deaths), and only weakly positively correlated with YLDs. This means that apparently, the YLLs have a much higher impact on this value than the YLDs.
+* Both **Prevalence** and **YLDs** are negatively correlated with Deaths. This affirms our conclusion from earlier that these measures emphasize diseases from which people don't always die, but just live with for a long time.
+* Similarly, **Incidence** and **YLDs** are negatively correlated: showing that YLDs emphasise diseases that not many people get each year, but with which they do live for a long time.
+* Also **Prevalence** and **Deaths** are negatively correlated, showing that diseases with high prevalence are diseases with which people live for a long time, but which don't always cause death.
+
+All of these measures clearly have their own merit and provide different insights. However, since we want to explore the impact diseases have on society, the DALYs measure is probably the most interesting. We will primarily use this measure for all future analyses.
+
+According to the DALYs, the four diseases with the biggest impact are cardiovascular diseases, maternal and neonatal disorders, neoplasms (cancers) and respiratory infections and tuberculosis. To finish this part, let's look at which countries are most affected by these diseases.
 
 ##### Clustering of countries
 
@@ -94,37 +112,23 @@ A deeper analysis of the political and medical model of these countries would be
 
 ##### Risk factors
 
-To better understand the risks factors for the worlds most deadliest disease, cardiovascular diseases, we analyse a dataset from [Kaggle](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset) . This dataset containes data for 70,000 patients each described by 11 features: <br> age, gender, height, weight, ap_hi (systolic blood pressure), ap_lo (diastolic blood pressure), cholesterol, gluc (glucose), smoke (binary), alco (binary acohol use), active (binary exercise). 
+To better understand the risks factors for the worlds most deadliest disease, cardiovascular diseases, we analyse a dataset from [Kaggle](https://www.kaggle.com/sulianova/cardiovascular-disease-dataset) . This dataset containes data for ***70,000*** patients each described by ***11*** features: <br> age, gender, height, weight, ap_hi (systolic blood pressure), ap_lo (diastolic blood pressure), cholesterol, gluc (glucose), smoke (binary), alco (binary acohol use), active (binary exercise). Also an additional feature was added, the pulse pressure, which is the difference of the systollic and diastollic pressure.
 
 <p align="center">
 <img src="assets/correlation.png" width="550px" >
 </p>
 
-The dataset was first extensively cleaned as it contained many unrealistic values. Next some of the features were editted, height and weighted were merged into a new feature "BMI" which may be more interesting when describing cardiovascular disease as it is stronger related to diet or other health issues like diabetes.
+From the correlation matrix we conclude that blood pressure, age, weight and cholesterol show the highest correlations to cardiovascular disease. height and weighted were merged into a new feature "BMI" which may be more interesting when describing cardiovascular disease as it is stronger related to diet or other health issues such as diabetes.
 
-A randomized decision tree algorithm was applied to quantify to quantify the importance of the features and thus giving us a better view of which are the biggest risk factors for cardiovascular disease.
+Correlations don't always give a good view on which features are truly most important. A randomized decision tree algorithm was applied to better quantify the importance of the features and thus giving us a better view of which are the biggest risk factors for cardiovascular disease.
 
 {% include CV.html %}
 
-We conclude that ageing is the largest contributing risk factor when it comes to cardiovascular diseases. This nicely agrees with finding in scientific literature which show that elastin proteins in the 
+We conclude that ageing is the largest contributing risk factor when it comes to cardiovascular diseases. This nicely agrees with finding in scientific literature which show that elastin proteins in the arteries degrade over time which the body cannot repair. Thus there is a direct relation between the passing of time (ageing) and cariovascular disease. This is not something that can easily be controlled or fixed, so if we want to minimize our risk of cardiovascular disease we have to concider the other features. <br>
 
-<ul>
-  {% for member in site.data.members %}
-    <li>
-      <a href="#" class="show-message">
-        {{ member.name }}, click me to see something
-      </a>
-      <div class="modal hide"> My favorite music is {{ member.music}}</div>
-    </li>
-  {% endfor %}
-</ul>
-
-High blood pressure is a result of other factors: ageing (arterial stiffening), cholesterol levels, salt/fluid intake, ...
+High blood pressure is caused of other factors: ageing (arterial stiffening), cholesterol levels, salt/fluid intake, ...
 So in order to minimize our risk of cardiovascular disease we should try to keep our BMI and cholesterol levels as low as possible.
-This can both be done be following a healthy diet and working out (burning fat).
-
-
-
+This can both be done be following a healthy diet and exercising regularly (burning fat).
 
 
 ##### conclusion
