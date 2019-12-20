@@ -31,13 +31,17 @@ The Global Burden of Diseases dataset also contains a number of other interestin
 
 {% include cluster1.html %}
 
+COMMENT: This plot shows strong difference between the Western and Eastern world, especially in Europe the grouping goes almost by the old iron curtain. This supports the hypothesis that cardiovascular diseases may depend mainly on societal and economic factors.
+
 {% include cluster2.html %}
+
+COMMENT: For respiraytory and tuberculosis, the correlation appears stronger, as larger groups form at lower grouping tresholds. The grouping also appears less dependant on societal and economic factors than for cardiovascular diseases, and perhaps more dependant on geography. This makes sense, as this is now an infectious disease we are looking at.
+
+An interesting correlation that shows up is the strong correlation between Germany and Argentina. This could just be a coincidence, but there are strong historical ties between the countries and a lot of German expats/people with German roots living in Argentina. https://en.wikipedia.org/wiki/German_Argentine People may transfer the diseases from country to country when visiting relatives. We are also looking at a long term measure such as DALY's. One hypthesis that could be made is that German Argentines with dual citizenship might seek treatment in Germany, a country ranked higher in healthcare comparisons. However, more research on if this kind of phenomenon exists would be needed, as this is pure speculation at this point.
 
 {% include cluster3.html %}
 
-{% include cluster4.html %}
-
-{% include cluster5.html %}
+For infectious diseases, incidence might be a better measure. Indeed, looking at Incidence as opposecd to DALYs shows some interesting things: the correlations are strong, indicating an infectious disease. At high groupimg,the entire world except for a select few countries are positively correlated, while these countries actually appear negatively correlated to teh bigger group. The interesting observation that can be made is that all these countries in their own separate groups are countries that have been subject to considerable instability, strife and even civil war in the time period lookid at. (Liberia, Chad, Afghanistan...) This might indicate that the disease incidence in conflict prone countries is simialr between these countries and very different and not positively correlated with the rest of the world. In essence, these countries may be "isolated", and not part of the global network of disease transmission. However, due to strife and instability, the medical data from these countries might just be incomolete or faulty.
 
 {% include cluster6.html %}
 
@@ -49,14 +53,22 @@ The Global Burden of Diseases dataset also contains a number of other interestin
 
 
 We saw in the previous section that some causes of death were more significant than others. 
-If we add the life expectancy and the GDP per capita, we notice that the suggestions we made previously are realistic. 
+If we add the life expectancy and the GDP per capita, we notice that the suggestions we made previously are realistic. <br>
+Indeed, we notice that cardiovascular diseases and apply precipitously to the most developed countries and to the richest countries while other causes of death apply more to the least developed countries. <br>
+Cardiovascular diseases, Musculoskeletal disorders and Neoplasms are considered as diseases of more developed countries but  Maternal and neonatal disorders and Respiratory infections and tuberculosis are diseases that are more prevalent in less developed countries. <br> 
 
-Indeed, we notice that cardiovascular diseases and apply precipitously to the most developed countries and to the richest countries while other causes of death apply more to the least developed countries. 
+The following graphs show these measures and the evolution of the countries over the years. <br>
+We have also expressed the economic situation of the country by its GDP per capita, which is represented by the size of the spheres. Furthermore, the the region and geographical sub-region of the specific country is represented by the colour.
 
-Cardiovascular diseases, Musculoskeletal disorders and Neoplasms are considered as diseases of more developed countries but  Maternal and neonatal disorders and Respiratory infections and tuberculosis are diseases that are more prevalent in less developed countries. 
+{% include eco1.html %}
 
-The following graphs show these measures and the evolution of the countries over the years. 
+{% include eco2.html %}
 
+{% include eco3.html %}
+
+{% include eco4.html %} 
+
+{% include eco5.html %}
 
 We also note that nuances exist for certain geographical areas 
 
@@ -64,26 +76,6 @@ We notice, for example, that the countries of the Middle East and the Golf have 
 
 A deeper analysis of the political and medical model of these countries would be interesting for a deeper analysis of the situation. 
 
-The graph below shows us the prevalence of maternal and neonatal disorders in respect to life expectancy. 
-We have also expressed the economic situation of the country by its GDP per capita, which is represented by the size of the spheres. Furthermore, the the region and geographical sub-region of the specific country is represented by the colour.
-
-{% include eco1.html %}
-
-The graph below shows us the prevalence of maternal and neonatal disorders in respect to life expectancy. 
-
-{% include eco2.html %}
-
-The graph below shows us the prevalence of maternal and neonatal disorders in respect to life expectancy. 
-
-{% include eco3.html %}
-
-The graph below shows us the prevalence of maternal and neonatal disorders in respect to life expectancy. 
-
-{% include eco4.html %}
-
-The graph below shows us the prevalence of maternal and neonatal disorders in respect to life expectancy. 
-
-{% include eco5.html %}
 
 ##### conclusion
 
