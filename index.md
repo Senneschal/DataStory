@@ -163,8 +163,7 @@ This can both be done be following a healthy diet and exercising regularly (burn
 
 
 ##### conclusion
-
-
+A general conclusion regarding this project would be that there is truely a wealth of medical data out there and even much more to be harvested. There is also a large diversity of different types of medical data and there is endless methods that could be used to analyze it and draw interesting conclusions from it. We are convinced that even more extensive methods in combination with larger volumes of medical data has great potential to shape the future of not only health care but our entire society. The next big advances in life expectancy and quality of life may very well be a result of the incorporation of Applied Data Analysis techniques into our health care systems and perhaps even the decission making of governments that could significantly impact the entire society.
 
 
 ---
